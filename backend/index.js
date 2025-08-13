@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, '../frontend/dist')));
 
 // React SPA fallback for any non-API route
 app.get(/^\/(?!api).*/, (req, res) => {
-    res.sendFile(path.join(__dirname, '.../frontend/dist/index.html'));
+    res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
 });
 
 // Error handlers (must be last)
