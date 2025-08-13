@@ -1,11 +1,11 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import connectDB from './config/db.js';
-import formsRouter from './routes/forms.js';
+import connectDB from './src/config/db.js';
+import formsRouter from './src/routes/forms.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { errorHandler, notFound } from './middleware/errorHandler.js';
+import { errorHandler, notFound } from './src/middleware/errorHandler.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
